@@ -1,7 +1,6 @@
 # EARTH_211_Final_Project
 **Research Questions**
-1. To what extent does the accumulation of mercury (Hg) in water sources vary and disproportionately affect locations in Africa (low-income areas) versus Europe (high-income areas)?
-2. What is the association between detectable levels of per- and polyfluoroalkyl substances (PFAS) in the U.S. public drinking water systems and the prevalence of cancer history at the census-tract level?
-3. How does the physiological adaptation of banyan trees (Ficus benghalensis) to different water conditions affect their photosynthetic efficiency and water use?
+1. To what extent does the bioaccumulation of blood lead (Pb) vary and disproportionately affect locations in Africa (low-income areas) versus Europe (high-income areas)?
+2. How does the dose of polyethylene terephthalate (PET) microplastics affect the expression of oxidative stress-related genes (catalase, SOD, GPx) and associated liver function markers in juvenile mammals?
 
 **Preliminary Research Method**
