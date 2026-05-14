@@ -8,4 +8,8 @@
   The main variables used for the mean blood lead concentration in adults and children are age group, concentration (µg/dL), year, entity (country name), and code (country name abbreviation). The main variables for the World Bank income groups are entity (country name), code (country name abbreviation), and the World Bank's income classification. 
   The file format for all data sets is CSV. 
 
+  For research question 2, air quality data for Busan, Daegu, Incheon, and Seoul are from the World Air Quality Historical Database (https://aqicn.org/historical/). The demographic data (Summary of Census Population) is from the KOrean Statistical Information Service (KOSIS), South Korea's national statistical portal. The uploaded files include concentrations for each of the criteria air pollutants (PM₂.₅, PM₁₀, O₃, CO, NO₂, SO₂). The air quality data for the 4 researched cities span from 2014 to 2026. The demographic data is from 2010.
+  The main variables used for the air quality data are date, PM₂.₅ and PM₁₀ in ㎍/㎥, and O₃, CO, NO₂, and SO₂ in ppm. The main variables for the demographic data are administrative divisions (eup, myeon, dong), age ranges, year, and population, which is separated by sex.
+  The file format for all data sets is CSV.
+
 **Preliminary Research Method**
