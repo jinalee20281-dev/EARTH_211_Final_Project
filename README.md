@@ -36,3 +36,17 @@ Analyzed Variables:
 Graphs, Maps, & Tables:
 - Summary Statistics Table: mean, median, IQR, and max for each pollutant per city
 - Time series plots: Use geom_line or geom_point to find annual mean concentrations per city, one panel per pollutant
+- Box Plots: Distribution of each pollutant by city, faceted by pollutant
+- Stacked bar charts: Estimated exposure burden by sex and age group per city
+- Grouped bar chart: coastal cities vs. inland cities, one bar per pollutant
+
+Statistical Method/Data Analysis Method
+- Kruskal-Wallis test: do pollutant concentrations differ significantly across the four cities
+- Mann-Whitney U test: compare coastal vs. inland for each pollutant separately
+- Spearman: shows the relationship between pollutants within each city
+- Mann-Kendall test: to see if concentrations are improving or worsening over time without assuming linearity
+
+Expected Results:
+- City pollution ranking for each pollutant, with statistical analysis of significant differences
+- Coastal vs. Inland effect: which has better air quality?
+- Exposure burden between males and females, and children, adults, and the elderly
