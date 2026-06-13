@@ -1,1 +1,119 @@
+**1. Introduction and Research Question**
 
+Air pollution is one of the most pressing environmental health challenges faced by rapidly urbanizing nations. South Korea, with its high population density, rapid industrial development, and geographic proximity to pollution sources in East Asia, experiences severe air quality conditions. The six criteria air pollutants regulated under most national and international frameworks, including fine particulate matter (PM₂.₅), coarse particulate matter (PM₁₀), ozone (O₃), carbon monoxide (CO), nitrogen dioxide (NO₂), and sulfur dioxide (SO₂), each carries distinct health implications and originates from different emission sources. Exposure to these pollutants is associated with cardiovascular and respiratory disease, premature mortality, and developmental harm in children.
+
+This project investigates the following research question:
+
+To what extent do the concentrations of criteria air pollutants (PM₂.₅, PM₁₀, O₃, CO, NO₂, SO₂) vary between major South Korean cities, and how do coastal (Busan and Incheon) versus inland urban areas (Seoul and Daegu) disproportionately expose the female and male populations, as well as the children, adult, and elderly populations?
+
+This question is scientifically meaningful because coastal and inland cities face different pollution environments. Coastal cities can benefit from onshore winds that disperse pollutants, while inland cities can experience stagnant air masses that can trap emissions. At the same time, coastal cities like Incheon have major industrial port facilities and international airports, potentially generating more emissions that could offset the effects of a dynamic atmospheric advantage. Understanding these geographic dynamics is essential for developing targeted air quality policies.
+
+The question is also socially meaningful because exposure to pollution is not uniform within a population. Children, whose respiratory and neurological systems are still developing, face greater physiological risk than healthy adults. The elderly, particularly those with pre-existing conditions, may face heightened mortality risk. Differences in exposure by gender may reflect sex-based patterns in factors such as time spent outdoors, commuting behavior, or occupational activity. Quantifying population-weighted exposure across these groups provides evidence for environmental justice analysis and can help with public health solutions.
+
+The question is environmentally meaningful because air pollutants directly harm ecosystems, damage biodiversity, and alter the global climate. These pollutants can cause environmental phenomena such as acid rain, eutrophication, and climate change, adversely affecting our way of life and causing further damage to spheres of the Earth beyond the atmosphere. It is important that we analyze pollution levels across different cities and their populations to gauge who is disproportionately affected by these environmental issues. 
+
+**2. Data**
+
+Two primary datasets were used in this research. The air quality data were obtained from the World Air Quality Historical Database (AQICN), an open platform that aggregates data from ground-level monitoring stations. Daily AQI index values for PM₂.₅, PM₁₀, O₃, NO₂, SO₂, and CO were downloaded for four cities: Seoul, Busan, Daegu, and Incheon. It is important to note that AQICN reports values on the US EPA AQI index scale (0–500) rather than in raw concentration units (e.g., µg/m³ or ppm). All pollutant values in this analysis are therefore expressed in AQI index units and later converted into categories of good, moderate, unhealthy for sensitive groups, unhealthy, very unhealthy, and hazardous. 
+
+The demographic data were obtained from the Korean Statistical Information Service (KOSIS), South Korea's national statistical portal. The dataset used was the Summary of Census Population by Administrative District, Sex, and Age from the 2010 national census. This provided city-level population counts disaggregated by five-year age bands and sex for Seoul, Busan, Daegu, and Incheon.
+
+The air quality data span from January 1, 2014, to May 9, 2026, providing approximately 11 full years of daily observations per city (2014–2025; the partial year 2026 was excluded from analysis). The four cities represent two types: coastal cities (Busan and Incheon) and inland cities (Seoul and Daegu). The demographic data are from a single point in time (the 2010 census) and represent only city-level totals. It is important to note that the demographic data is significantly outdated and should be taken into account when analyzing how the results of this analysis apply to current trends. 
+
+The main variables are the daily AQI index for PM₂.₅, PM₁₀, O₃, NO₂, SO₂, and CO, date, place, coastal vs. inland, population, and gender. 
+
+All data processing was performed in R. The AQICN CSV files required several cleaning steps. Missing values were encoded as blank strings rather than NA; these were identified using na_if() after trimming whitespace and converted to numeric NA. Partial-year 2026 data (January–May only) were excluded by filtering to year < 2026 to avoid low annual means. After cleaning, a year column was extracted from the date for aggregation and trend analysis.
+
+For the KOSIS demographic data, the first row was a duplicate header and was removed. Columns were renamed to division, age_raw, pop_total, pop_male, and pop_female. Summary rows provided by KOSIS (Total, 14 and under, 15–64 Years old, 65 Years old, Mean age, Median age) were excluded to avoid double-counting. Age categories were then aggregated into three analytical groups: Children (0–14 years: bands 0–4, 5–9, 10–14), Adults (15–64 years: bands 15–19 through 60–64), and Elderly (65+ years: bands 65–69 through 85 and over). The data were pivoted to long format with one row per city × age group × sex combination, yielding 24 rows total.
+
+PM₂.₅ data were missing for a substantial portion of the early years, particularly in 2014–2015. Missing values were excluded from all analyses using na.rm = TRUE or na.omit().
+
+**3. Methods**
+
+A total of six quantitative analysis techniques were applied: (1) Kruskal-Wallis test with Dunn's post-hoc, (2) Mann-Whitney U test, (3) Spearman correlation analysis, (4) Mann-Kendall trend test, (5) linear regression on annual means, and (6) population-weighted concentration modeling. These methods were chosen because air quality data are typically non-normally distributed and right-skewed, with frequent extreme-pollution days making it difficult to assume normality, which is required for parametric tests such as ANOVA or Pearson correlation. 
+
+The Kruskal-Wallis test is a non-parametric one-way analysis of variance based on ranked values. It was used to test whether daily AQI concentrations differed significantly across the four cities for each pollutant separately.
+
+H₀: The distribution of [the type of pollutant] AQI is identical across Seoul, Busan, Daegu, and Incheon.
+
+H₁: At least one city has a distribution that differs from the others.
+
+When the Kruskal-Wallis test indicated a significant difference (p < 0.05), Dunn's post hoc test with a Bonferroni correction was applied to identify which specific city pairs differed.
+
+The Mann-Whitney U test (Wilcoxon rank-sum test) was used to compare daily AQI distributions between coastal cities (Busan and Incheon combined) and inland cities (Seoul and Daegu combined) for each pollutant.
+
+H₀: The distribution of [pollutant] AQI is identical between coastal and inland cities.
+
+H₁: The distributions differ between coastal and inland cities.
+
+This test is appropriate for comparing two independent groups without assuming normality and directly addresses the coastal vs. inland component of the research question.
+
+Spearman's correlation was computed for all 15 unique pollutant pairs within each city, yielding four 6×6 correlation matrices. It was used to identify which pollutants tend to be correlated within each city, suggesting shared emission sources (e.g., traffic, industry).
+
+The Mann-Kendall test is a nonparametric test for trends in time-series data. It was applied to annual mean AQI values (2014–2025) for each city-pollutant combination to determine whether concentrations were significantly improving or worsening over time. The test statistic tau (τ) ranges from −1 to +1, where negative values indicate a downward (improving) trend and positive values indicate an upward (worsening) trend. Years with missing annual means (primarily PM₂.₅ in 2014–2015) were excluded using na.omit() before running the test.
+
+H₀: There is no monotonic trend in annual mean [the type of pollutant] AQI over time.
+
+H₁: There is a significant trend (increasing or decreasing).
+
+To quantify the rate of change using the Mann-Kendall test, a linear regression was fitted for each city-pollutant combination, with annual mean AQI as the outcome and year as the predictor. The slope coefficient (AQI units per year) measures how quickly conditions are improving or deteriorating. R² values were used to assess how well year alone explains the variance in annual means. While linear regression assumes normality of residuals, it is applied here to annual means (n = 11 or 12 per series) rather than to the raw daily data, substantially reducing skewness through aggregation.
+
+To assess disproportionate demographic exposure, population-weighted concentration (PWC) was calculated for each demographic group (sex × age group) and pollutant. PWC normalizes exposure by dividing the sum of (mean concentration × population) across cities by the total population across all four cities combined, following the standard environmental health formula:
+
+PWC = Σ(mean_concentrationcity × populationcity) / total_populationall cities
+
+This approach accounts for city population size, so a smaller city with very poor air quality does not automatically dominate the exposure estimate.
+
+**4. Results**
+
+The Kruskal-Wallis test showed highly significant differences in daily AQI concentrations across the four cities for all six pollutants (Table 2). Chi-square statistics ranged from 294.95 for PM₂.₅ to 2,783.55 for SO₂, with all p-values approaching or reaching zero. These results confirm that cities are strongly associated with pollutant exposure levels, thereby emphasizing the need for city-specific analysis rather than treating all South Korean urban areas as equivalent.
+
+Dunn's post hoc tests with Bonferroni correction identified the specific city pairs driving these differences. For PM₂.₅, Daegu–Seoul was the most significant pair (Z = 3.65, p = 7.83 × 10⁻⁴), while Busan–Incheon comparisons were not significant (p = 0.12), suggesting relatively similar PM₂.₅ levels between the two coastal cities. For PM₁₀, the most extreme difference was between Incheon and Seoul (Z = −18.42, p = 2.64 × 10⁻⁷⁵), indicating that Incheon has substantially lower PM₁₀ than Seoul despite being a port city. O₃ showed the strongest separation between Busan and Seoul (Z = 27.56, p = 9.34 × 10⁻¹⁶⁷), while SO₂ and CO showed Incheon–Seoul as the most diverse pair, with Incheon being consistently lower.
+
+The Mann-Whitney U test found statistically significant differences between coastal and inland cities for all six pollutants (Table 3), with all p-values well below 0.05. This indicates that city geography (coastal vs. inland) is a meaningful predictor of air quality, even when aggregating across city pairs.
+
+Coastal cities showed higher median AQI values than inland cities across all six pollutants. This finding was surprising, given the assumption that coastal wind exposure would consistently provide air quality advantages. The violin plots help interpret that coastal cities have a higher median AQI. For CO and SO₂, the distributions across all four cities are tightly concentrated near zero with long right tails. The city-type difference in medians is small, but the coastal cities show slightly heavier right tails reflecting industrial emission events, particularly from Incheon. For NO₂, the violin plots reveal that Busan and Incheon (coastal) have notably wider and taller distributions than Daegu and Seoul (inland), with mass concentrated between AQI 20–60, consistent with both cities' roles as major ports. For O₃, the distributions are broader and more symmetric than those of the combustion pollutants across all cities. For PM₁₀ and PM₂.₅, all four cities show similarly wide distributions, with extreme outlier days reaching AQI values of 300–500 (PM₁₀) and 300+ (PM₂.₅). 
+
+From the line graph, we can see trends for all 4 pollutants across the different cities. For NO₂, all four cities show a decline from 2014 to 2025, with exceedance days falling from roughly 75–130 per year to near zero, suggesting substantial improvements in traffic and combustion emission controls over this period. For O₃, the trend is reversed: exceedance days have increased across all cities since approximately 2018, with Busan and Incheon reaching their highest values in 2024–2025.
+
+PM₁₀ exceedance days declined substantially from 2014 (150–250 days per year) to 2020 (under 100 days in most cities) but showed a partial increase in 2022–2024, particularly in Incheon. PM₂.₅ data are partially missing for 2014–2015 due to incomplete monitoring, but from 2016 onward all four cities show consistently high exceedance counts (200–340 days per year), indicating that fine particulate matter remains the most pervasive air quality concern for South Korean urban residents throughout the study period.
+
+The coastal-higher result is therefore driven primarily by Incheon's industrial and port emissions elevating the coastal group average, rather than reflecting a consistent geographic pattern shared by both Busan and Incheon.
+
+Spearman correlation matrices were computed for each city. Several consistent patterns emerge across all four cities. PM₁₀ and NO₂ are strongly positively correlated (r = 0.65–0.74), suggesting shared emission sources most likely from road traffic. NO₂, SO₂, and CO form a combustion group with moderate-to-strong intercorrelations (r = 0.55–0.83), consistent with their common origin in fossil fuel combustion from transportation and industry.
+
+O₃ shows a notably different pattern across city types. In Busan, O₃ is weakly positively correlated with most combustion pollutants (r = 0.05–0.27). In Seoul and Incheon, however, O₃ is negatively correlated with NO₂, SO₂, and CO (Seoul: −0.40, −0.30, −0.35; Incheon: −0.12, −0.06, −0.22). This negative relationship can be explained by high NO₂ levels titrating ozone via the reaction NO + O₃ → NO₂ + O₂, thereby suppressing O₃ on high-combustion days, especially in dense cities. The stronger negative relationship in Seoul and Incheon compared to Busan may reflect higher NOx densities in these larger, more industrialized cities.
+
+The Mann-Kendall trend test applied to annual means (2014–2025) revealed that the majority of city-pollutant combinations show statistically significant improving trends (Table 4). Tau values were negative for PM₂.₅, PM₁₀, NO₂, SO₂, and CO across all four cities, with p-values consistently below 0.05. This indicates declines in combustion and particulate pollution. Daegu showed the strongest improving trend for NO₂ (τ = −1.00, p = 8.30 × 10⁻⁶), indicating a consistent decline across all years.
+
+The notable exception is O₃, which showed positive tau values in Seoul (τ = +0.94), Incheon (τ = +0.48), and Daegu (τ = +0.39), with significant p-values in Seoul and Incheon. This confirms that ozone remains the pollutant of concern across South Korean cities.
+
+Linear regression on annual means reinforced these findings with quantitative rates of change. PM₂.₅ declined fastest in Busan (−4.68 AQI units/year, R² = 0.88) and Daegu (−4.24 AQI units/year, R² = 0.94), indicating these cities saw the steepest and most consistent PM₂.₅ improvements. Seoul's NO₂ declined by −1.87 AQI units/year with a high R² of 0.98. In contrast, O₃ slopes were positive in Seoul (+1.36, R² = 0.93) and Incheon (+0.48, R² = 0.43), and the Busan O₃ regression was not significant (p = 0.76, R² = 0.01), indicating no meaningful trend for Busan.
+
+Population-weighted concentration (PWC) analysis incorporated the 2010 KOSIS census data for Seoul (9.63 million), Busan (3.39 million), Daegu (2.43 million), and Incheon (2.63 million), for a total of approximately 18.08 million people across the four cities. Because Seoul accounts for almost half of the combined population of these four cities, Seoul's pollution levels strongly influence overall PWC estimates.
+
+Across demographic groups, elderly populations face higher population-weighted PM₂.₅ and NO₂ concentrations than children or adults, which can be explained by a large concentration of the elderly in Seoul and Busan. For O₃, however, the demographic pattern reverses. Because O₃ is trending upward most sharply in Seoul, where adults and children are concentrated in large numbers, working-age adults and children have increasingly more ozone exposure relative to the elderly. Female populations show slightly higher PWC for most pollutants than males, reflecting the larger female population in Seoul in the 2010 census, particularly in older age bands (females outnumber males significantly in the 65+ category).
+
+**5. Discussion**
+
+The Kruskal-Wallis and Dunn's post hoc tests confirm that pollutant concentrations differ significantly across all four cities, with city-specific profiles reflecting their industrial structure, geography, and population density. The Mann-Whitney U test confirms that coastal vs. inland geography is a statistically significant predictor of air quality, where coastal cities show higher AQI. The demographic exposure analysis reveals significant differences in PWC across age and sex groups.
+
+Several important limitations constrain the interpretation of these findings. First, the AQICN data are reported in AQI index units rather than raw concentration units. While the AQI scale is internationally comparable and widely used, converting back to µg/m³ or ppm for direct comparison with WHO concentration guidelines requires converting back to concentration values, which was not done in this analysis. All threshold exceedances are therefore expressed relative to the large AQI > 50 benchmark rather than against the underlying WHO concentration benchmarks.
+
+Secondly, the AQICN data reflect readings from one or a small number of monitoring stations per city, which may not capture spatial differences within each city. Pollution levels can vary dramatically between industrial districts, residential areas, and green spaces within the same city.
+
+Finally, the demographic data are from the 2010 census, while the air quality data span 2014–2025. South Korea's population has grown significantly over this period. Using 2010 population demographics to estimate exposure for 2014–2025 and beyond creates a temporal difference. Ideally, annual population estimates would be used to produce year-specific PWC values.
+
+With more research and better data, several improvements could be made to this analysis. Air quality data from smaller areas (smaller than the cities analyzed here), matched with demographics, would be more effective for assessing environmental justice impacts. Converting AQICN AQI values to concentration units using EPA breakpoint equations would allow direct comparison with WHO and Korean national ambient air quality standards. Incorporating annual population estimates from KOSIS, rather than a single 2010 census snapshot, would improve the demographic exposure calculations. Finally, expanding the analysis to include other variables such as wind speed, temperature, and humidity would help separate the effects of geography beyond coastal vs. inland. 
+
+**6. Conclusion**
+
+This analysis examined how six criteria air pollutants vary across Seoul, Busan, Daegu, and Incheon using over a decade of daily AQI data from the AQICN historical database, combined with 2010 KOSIS census data to estimate demographic exposure. Six quantitative methods and 2 graphical methods were applied to address the research question.
+
+The central findings are that pollutant concentrations differ significantly across all four cities for all six pollutants. This analysis also shows that coastal cities show higher median AQI than inland cities across all pollutants, driven primarily by Incheon's industrial profile, but that PM₂.₅, PM₁₀, NO₂, SO₂, and CO have all improved significantly over 2014–2025. O₃ is the exception, showing a significant worsening trend in Seoul and Incheon. Finally, we know that elderly and female populations bear slightly higher population-weighted exposure to particulate and combustion pollutants, while rising O₃ concentrations increasingly burden working-age adults and children.
+
+These findings highlight that air quality management in South Korean cities cannot be addressed with uniform policies nationwide. The distinct trajectories of ozone and other pollutants highlight the need for emission controls alongside existing regulations. The disproportionate exposure of elderly populations to fine particulate matter needs targeted health surveillance and early warning systems in cities with large aging populations. Despite widespread awareness of air pollution in the country, it is imperative that policymakers use geographically and demographically specific data to create a healthier environment for all. 
+
+**7. Generative AI Acknowledgment**
+
+Claude was used throughout this project for R programming assistance. Specifically, Claude was used to aggregate the data analyses into single tables, for which I had difficulty writing the code. It was also used sporadically to debug code/teach me code I had difficulty understanding or using while coding in R. For example, Claude showed me how to use Bonferroni and integrate it into my Kruskal-Wallis test. 
