@@ -4,7 +4,7 @@ clean_airq <- function(df, city_name) {
     mutate(
       across(c(pm25, pm10, o3, no2, so2, co),
              ~ as.numeric(na_if(trimws(as.character(.x)), ""))),
-      city      = city_name,
+      city = city_name,
       city_type = case_when(
         city_name %in% c("Busan", "Incheon") ~ "Coastal",
         city_name %in% c("Seoul", "Daegu")   ~ "Inland"
