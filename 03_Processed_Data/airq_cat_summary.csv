@@ -1,0 +1,672 @@
+"city","year","pollutant","category","days"
+"Busan",2014,"co","Good",362
+"Busan",2014,"no2","Good",288
+"Busan",2014,"no2","Moderate",74
+"Busan",2014,"o3","Good",272
+"Busan",2014,"o3","Moderate",90
+"Busan",2014,"pm10","Good",125
+"Busan",2014,"pm10","Moderate",221
+"Busan",2014,"pm10","Unhealthy for Sensitive Groups",13
+"Busan",2014,"pm10","Unhealthy",1
+"Busan",2014,"pm10","Very Unhealthy",2
+"Busan",2014,"so2","Good",362
+"Busan",2015,"co","Good",360
+"Busan",2015,"no2","Good",293
+"Busan",2015,"no2","Moderate",67
+"Busan",2015,"o3","Good",253
+"Busan",2015,"o3","Moderate",98
+"Busan",2015,"o3","Unhealthy for Sensitive Groups",3
+"Busan",2015,"pm10","Good",159
+"Busan",2015,"pm10","Moderate",198
+"Busan",2015,"pm10","Unhealthy for Sensitive Groups",3
+"Busan",2015,"pm25","Good",1
+"Busan",2015,"pm25","Moderate",165
+"Busan",2015,"pm25","Unhealthy for Sensitive Groups",171
+"Busan",2015,"pm25","Unhealthy",20
+"Busan",2015,"pm25","Very Unhealthy",2
+"Busan",2015,"pm25","Hazardous",1
+"Busan",2015,"so2","Good",359
+"Busan",2015,"so2","Moderate",1
+"Busan",2016,"co","Good",363
+"Busan",2016,"no2","Good",281
+"Busan",2016,"no2","Moderate",82
+"Busan",2016,"o3","Good",272
+"Busan",2016,"o3","Moderate",84
+"Busan",2016,"o3","Unhealthy for Sensitive Groups",7
+"Busan",2016,"pm10","Good",198
+"Busan",2016,"pm10","Moderate",161
+"Busan",2016,"pm10","Unhealthy for Sensitive Groups",4
+"Busan",2016,"pm25","Moderate",165
+"Busan",2016,"pm25","Unhealthy for Sensitive Groups",174
+"Busan",2016,"pm25","Unhealthy",23
+"Busan",2016,"so2","Good",363
+"Busan",2017,"co","Good",301
+"Busan",2017,"no2","Good",240
+"Busan",2017,"no2","Moderate",61
+"Busan",2017,"o3","Good",196
+"Busan",2017,"o3","Moderate",102
+"Busan",2017,"o3","Unhealthy for Sensitive Groups",3
+"Busan",2017,"pm10","Good",125
+"Busan",2017,"pm10","Moderate",175
+"Busan",2017,"pm10","Unhealthy for Sensitive Groups",1
+"Busan",2017,"pm25","Good",3
+"Busan",2017,"pm25","Moderate",154
+"Busan",2017,"pm25","Unhealthy for Sensitive Groups",133
+"Busan",2017,"pm25","Unhealthy",11
+"Busan",2017,"so2","Good",301
+"Busan",2018,"co","Good",362
+"Busan",2018,"no2","Good",322
+"Busan",2018,"no2","Moderate",40
+"Busan",2018,"o3","Good",289
+"Busan",2018,"o3","Moderate",66
+"Busan",2018,"o3","Unhealthy for Sensitive Groups",7
+"Busan",2018,"pm10","Good",202
+"Busan",2018,"pm10","Moderate",158
+"Busan",2018,"pm10","Unhealthy for Sensitive Groups",2
+"Busan",2018,"pm25","Good",8
+"Busan",2018,"pm25","Moderate",222
+"Busan",2018,"pm25","Unhealthy for Sensitive Groups",120
+"Busan",2018,"pm25","Unhealthy",13
+"Busan",2018,"so2","Good",362
+"Busan",2019,"co","Good",361
+"Busan",2019,"no2","Good",338
+"Busan",2019,"no2","Moderate",22
+"Busan",2019,"o3","Good",277
+"Busan",2019,"o3","Moderate",79
+"Busan",2019,"o3","Unhealthy for Sensitive Groups",4
+"Busan",2019,"pm10","Good",249
+"Busan",2019,"pm10","Moderate",111
+"Busan",2019,"pm25","Good",17
+"Busan",2019,"pm25","Moderate",240
+"Busan",2019,"pm25","Unhealthy for Sensitive Groups",95
+"Busan",2019,"pm25","Unhealthy",9
+"Busan",2019,"so2","Good",361
+"Busan",2020,"co","Good",364
+"Busan",2020,"no2","Good",357
+"Busan",2020,"no2","Moderate",7
+"Busan",2020,"o3","Good",294
+"Busan",2020,"o3","Moderate",68
+"Busan",2020,"o3","Unhealthy for Sensitive Groups",2
+"Busan",2020,"pm10","Good",310
+"Busan",2020,"pm10","Moderate",54
+"Busan",2020,"pm25","Good",38
+"Busan",2020,"pm25","Moderate",282
+"Busan",2020,"pm25","Unhealthy for Sensitive Groups",42
+"Busan",2020,"pm25","Unhealthy",1
+"Busan",2020,"so2","Good",364
+"Busan",2021,"co","Good",365
+"Busan",2021,"no2","Good",363
+"Busan",2021,"no2","Moderate",2
+"Busan",2021,"o3","Good",290
+"Busan",2021,"o3","Moderate",72
+"Busan",2021,"o3","Unhealthy for Sensitive Groups",3
+"Busan",2021,"pm10","Good",298
+"Busan",2021,"pm10","Moderate",64
+"Busan",2021,"pm10","Unhealthy for Sensitive Groups",1
+"Busan",2021,"pm10","Unhealthy",1
+"Busan",2021,"pm10","Hazardous",1
+"Busan",2021,"pm25","Good",70
+"Busan",2021,"pm25","Moderate",257
+"Busan",2021,"pm25","Unhealthy for Sensitive Groups",36
+"Busan",2021,"pm25","Unhealthy",2
+"Busan",2021,"so2","Good",365
+"Busan",2022,"co","Good",365
+"Busan",2022,"no2","Good",364
+"Busan",2022,"no2","Moderate",1
+"Busan",2022,"o3","Good",266
+"Busan",2022,"o3","Moderate",96
+"Busan",2022,"o3","Unhealthy for Sensitive Groups",3
+"Busan",2022,"pm10","Good",329
+"Busan",2022,"pm10","Moderate",36
+"Busan",2022,"pm25","Good",85
+"Busan",2022,"pm25","Moderate",246
+"Busan",2022,"pm25","Unhealthy for Sensitive Groups",33
+"Busan",2022,"pm25","Unhealthy",1
+"Busan",2022,"so2","Good",365
+"Busan",2023,"co","Good",365
+"Busan",2023,"no2","Good",363
+"Busan",2023,"no2","Moderate",2
+"Busan",2023,"o3","Good",283
+"Busan",2023,"o3","Moderate",79
+"Busan",2023,"o3","Unhealthy for Sensitive Groups",3
+"Busan",2023,"pm10","Good",304
+"Busan",2023,"pm10","Moderate",58
+"Busan",2023,"pm10","Unhealthy",3
+"Busan",2023,"pm25","Good",89
+"Busan",2023,"pm25","Moderate",232
+"Busan",2023,"pm25","Unhealthy for Sensitive Groups",40
+"Busan",2023,"pm25","Unhealthy",4
+"Busan",2023,"so2","Good",365
+"Busan",2024,"co","Good",364
+"Busan",2024,"no2","Good",359
+"Busan",2024,"no2","Moderate",5
+"Busan",2024,"o3","Good",285
+"Busan",2024,"o3","Moderate",74
+"Busan",2024,"o3","Unhealthy for Sensitive Groups",5
+"Busan",2024,"pm10","Good",332
+"Busan",2024,"pm10","Moderate",29
+"Busan",2024,"pm10","Unhealthy",1
+"Busan",2024,"pm10","Very Unhealthy",2
+"Busan",2024,"pm25","Good",114
+"Busan",2024,"pm25","Moderate",220
+"Busan",2024,"pm25","Unhealthy for Sensitive Groups",29
+"Busan",2024,"pm25","Unhealthy",2
+"Busan",2024,"so2","Good",364
+"Busan",2025,"co","Good",362
+"Busan",2025,"no2","Good",361
+"Busan",2025,"no2","Moderate",1
+"Busan",2025,"o3","Good",252
+"Busan",2025,"o3","Moderate",109
+"Busan",2025,"o3","Unhealthy for Sensitive Groups",1
+"Busan",2025,"pm10","Good",329
+"Busan",2025,"pm10","Moderate",33
+"Busan",2025,"pm25","Good",52
+"Busan",2025,"pm25","Moderate",281
+"Busan",2025,"pm25","Unhealthy for Sensitive Groups",28
+"Busan",2025,"pm25","Unhealthy",1
+"Busan",2025,"so2","Good",362
+"Daegu",2014,"co","Good",362
+"Daegu",2014,"no2","Good",288
+"Daegu",2014,"no2","Moderate",74
+"Daegu",2014,"o3","Good",273
+"Daegu",2014,"o3","Moderate",87
+"Daegu",2014,"o3","Unhealthy for Sensitive Groups",2
+"Daegu",2014,"pm10","Good",165
+"Daegu",2014,"pm10","Moderate",190
+"Daegu",2014,"pm10","Unhealthy for Sensitive Groups",6
+"Daegu",2014,"pm10","Unhealthy",1
+"Daegu",2014,"so2","Good",362
+"Daegu",2015,"co","Good",360
+"Daegu",2015,"no2","Good",299
+"Daegu",2015,"no2","Moderate",61
+"Daegu",2015,"o3","Good",261
+"Daegu",2015,"o3","Moderate",92
+"Daegu",2015,"o3","Unhealthy for Sensitive Groups",1
+"Daegu",2015,"pm10","Good",168
+"Daegu",2015,"pm10","Moderate",188
+"Daegu",2015,"pm10","Unhealthy for Sensitive Groups",3
+"Daegu",2015,"pm10","Very Unhealthy",1
+"Daegu",2015,"pm25","Good",10
+"Daegu",2015,"pm25","Moderate",198
+"Daegu",2015,"pm25","Unhealthy for Sensitive Groups",129
+"Daegu",2015,"pm25","Unhealthy",23
+"Daegu",2015,"so2","Good",360
+"Daegu",2016,"co","Good",363
+"Daegu",2016,"no2","Good",337
+"Daegu",2016,"no2","Moderate",26
+"Daegu",2016,"o3","Good",269
+"Daegu",2016,"o3","Moderate",92
+"Daegu",2016,"o3","Unhealthy for Sensitive Groups",2
+"Daegu",2016,"pm10","Good",168
+"Daegu",2016,"pm10","Moderate",191
+"Daegu",2016,"pm10","Unhealthy for Sensitive Groups",3
+"Daegu",2016,"pm10","Unhealthy",1
+"Daegu",2016,"pm25","Good",7
+"Daegu",2016,"pm25","Moderate",189
+"Daegu",2016,"pm25","Unhealthy for Sensitive Groups",147
+"Daegu",2016,"pm25","Unhealthy",19
+"Daegu",2016,"so2","Good",363
+"Daegu",2017,"co","Good",301
+"Daegu",2017,"no2","Good",279
+"Daegu",2017,"no2","Moderate",22
+"Daegu",2017,"o3","Good",217
+"Daegu",2017,"o3","Moderate",78
+"Daegu",2017,"o3","Unhealthy for Sensitive Groups",6
+"Daegu",2017,"pm10","Good",142
+"Daegu",2017,"pm10","Moderate",157
+"Daegu",2017,"pm10","Unhealthy for Sensitive Groups",2
+"Daegu",2017,"pm25","Good",3
+"Daegu",2017,"pm25","Moderate",161
+"Daegu",2017,"pm25","Unhealthy for Sensitive Groups",125
+"Daegu",2017,"pm25","Unhealthy",12
+"Daegu",2017,"so2","Good",300
+"Daegu",2018,"co","Good",362
+"Daegu",2018,"no2","Good",346
+"Daegu",2018,"no2","Moderate",16
+"Daegu",2018,"o3","Good",280
+"Daegu",2018,"o3","Moderate",75
+"Daegu",2018,"o3","Unhealthy for Sensitive Groups",7
+"Daegu",2018,"pm10","Good",221
+"Daegu",2018,"pm10","Moderate",137
+"Daegu",2018,"pm10","Unhealthy for Sensitive Groups",4
+"Daegu",2018,"pm25","Good",35
+"Daegu",2018,"pm25","Moderate",195
+"Daegu",2018,"pm25","Unhealthy for Sensitive Groups",118
+"Daegu",2018,"pm25","Unhealthy",15
+"Daegu",2018,"so2","Good",362
+"Daegu",2019,"co","Good",361
+"Daegu",2019,"no2","Good",354
+"Daegu",2019,"no2","Moderate",6
+"Daegu",2019,"o3","Good",258
+"Daegu",2019,"o3","Moderate",94
+"Daegu",2019,"o3","Unhealthy for Sensitive Groups",8
+"Daegu",2019,"pm10","Good",246
+"Daegu",2019,"pm10","Moderate",114
+"Daegu",2019,"pm25","Good",33
+"Daegu",2019,"pm25","Moderate",220
+"Daegu",2019,"pm25","Unhealthy for Sensitive Groups",92
+"Daegu",2019,"pm25","Unhealthy",16
+"Daegu",2019,"so2","Good",361
+"Daegu",2020,"co","Good",364
+"Daegu",2020,"no2","Good",345
+"Daegu",2020,"no2","Moderate",19
+"Daegu",2020,"o3","Good",297
+"Daegu",2020,"o3","Moderate",63
+"Daegu",2020,"o3","Unhealthy for Sensitive Groups",4
+"Daegu",2020,"pm10","Good",294
+"Daegu",2020,"pm10","Moderate",70
+"Daegu",2020,"pm25","Good",43
+"Daegu",2020,"pm25","Moderate",247
+"Daegu",2020,"pm25","Unhealthy for Sensitive Groups",68
+"Daegu",2020,"pm25","Unhealthy",5
+"Daegu",2020,"so2","Good",364
+"Daegu",2021,"co","Good",365
+"Daegu",2021,"no2","Good",351
+"Daegu",2021,"no2","Moderate",14
+"Daegu",2021,"o3","Good",294
+"Daegu",2021,"o3","Moderate",67
+"Daegu",2021,"o3","Unhealthy for Sensitive Groups",4
+"Daegu",2021,"pm10","Good",290
+"Daegu",2021,"pm10","Moderate",73
+"Daegu",2021,"pm10","Unhealthy for Sensitive Groups",1
+"Daegu",2021,"pm10","Hazardous",1
+"Daegu",2021,"pm25","Good",86
+"Daegu",2021,"pm25","Moderate",225
+"Daegu",2021,"pm25","Unhealthy for Sensitive Groups",50
+"Daegu",2021,"pm25","Unhealthy",4
+"Daegu",2021,"so2","Good",365
+"Daegu",2022,"co","Good",365
+"Daegu",2022,"no2","Good",354
+"Daegu",2022,"no2","Moderate",11
+"Daegu",2022,"o3","Good",283
+"Daegu",2022,"o3","Moderate",79
+"Daegu",2022,"o3","Unhealthy for Sensitive Groups",3
+"Daegu",2022,"pm10","Good",313
+"Daegu",2022,"pm10","Moderate",52
+"Daegu",2022,"pm25","Good",92
+"Daegu",2022,"pm25","Moderate",221
+"Daegu",2022,"pm25","Unhealthy for Sensitive Groups",51
+"Daegu",2022,"pm25","Unhealthy",1
+"Daegu",2022,"so2","Good",365
+"Daegu",2023,"co","Good",365
+"Daegu",2023,"no2","Good",359
+"Daegu",2023,"no2","Moderate",6
+"Daegu",2023,"o3","Good",276
+"Daegu",2023,"o3","Moderate",88
+"Daegu",2023,"o3","Unhealthy for Sensitive Groups",1
+"Daegu",2023,"pm10","Good",294
+"Daegu",2023,"pm10","Moderate",67
+"Daegu",2023,"pm10","Unhealthy for Sensitive Groups",2
+"Daegu",2023,"pm10","Unhealthy",2
+"Daegu",2023,"pm25","Good",93
+"Daegu",2023,"pm25","Moderate",216
+"Daegu",2023,"pm25","Unhealthy for Sensitive Groups",53
+"Daegu",2023,"pm25","Unhealthy",3
+"Daegu",2023,"so2","Good",365
+"Daegu",2024,"co","Good",364
+"Daegu",2024,"no2","Good",363
+"Daegu",2024,"no2","Moderate",1
+"Daegu",2024,"o3","Good",256
+"Daegu",2024,"o3","Moderate",101
+"Daegu",2024,"o3","Unhealthy for Sensitive Groups",7
+"Daegu",2024,"pm10","Good",335
+"Daegu",2024,"pm10","Moderate",26
+"Daegu",2024,"pm10","Unhealthy for Sensitive Groups",3
+"Daegu",2024,"pm25","Good",120
+"Daegu",2024,"pm25","Moderate",223
+"Daegu",2024,"pm25","Unhealthy for Sensitive Groups",22
+"Daegu",2024,"so2","Good",364
+"Daegu",2025,"co","Good",359
+"Daegu",2025,"no2","Good",356
+"Daegu",2025,"no2","Moderate",3
+"Daegu",2025,"o3","Good",246
+"Daegu",2025,"o3","Moderate",109
+"Daegu",2025,"o3","Unhealthy for Sensitive Groups",4
+"Daegu",2025,"pm10","Good",334
+"Daegu",2025,"pm10","Moderate",25
+"Daegu",2025,"pm25","Good",100
+"Daegu",2025,"pm25","Moderate",235
+"Daegu",2025,"pm25","Unhealthy for Sensitive Groups",22
+"Daegu",2025,"pm25","Unhealthy",2
+"Daegu",2025,"so2","Good",359
+"Incheon",2014,"co","Good",362
+"Incheon",2014,"no2","Good",220
+"Incheon",2014,"no2","Moderate",141
+"Incheon",2014,"no2","Unhealthy for Sensitive Groups",1
+"Incheon",2014,"o3","Good",296
+"Incheon",2014,"o3","Moderate",65
+"Incheon",2014,"o3","Unhealthy for Sensitive Groups",1
+"Incheon",2014,"pm10","Good",145
+"Incheon",2014,"pm10","Moderate",209
+"Incheon",2014,"pm10","Unhealthy for Sensitive Groups",8
+"Incheon",2014,"so2","Good",362
+"Incheon",2015,"co","Good",360
+"Incheon",2015,"no2","Good",248
+"Incheon",2015,"no2","Moderate",112
+"Incheon",2015,"o3","Good",254
+"Incheon",2015,"o3","Moderate",98
+"Incheon",2015,"o3","Unhealthy for Sensitive Groups",2
+"Incheon",2015,"pm10","Good",133
+"Incheon",2015,"pm10","Moderate",218
+"Incheon",2015,"pm10","Unhealthy for Sensitive Groups",7
+"Incheon",2015,"pm10","Very Unhealthy",1
+"Incheon",2015,"pm10","Hazardous",1
+"Incheon",2015,"pm25","Good",8
+"Incheon",2015,"pm25","Moderate",165
+"Incheon",2015,"pm25","Unhealthy for Sensitive Groups",148
+"Incheon",2015,"pm25","Unhealthy",39
+"Incheon",2015,"so2","Good",360
+"Incheon",2016,"co","Good",363
+"Incheon",2016,"no2","Good",278
+"Incheon",2016,"no2","Moderate",85
+"Incheon",2016,"o3","Good",266
+"Incheon",2016,"o3","Moderate",90
+"Incheon",2016,"o3","Unhealthy for Sensitive Groups",7
+"Incheon",2016,"pm10","Good",108
+"Incheon",2016,"pm10","Moderate",251
+"Incheon",2016,"pm10","Unhealthy for Sensitive Groups",2
+"Incheon",2016,"pm10","Unhealthy",2
+"Incheon",2016,"pm25","Good",17
+"Incheon",2016,"pm25","Moderate",159
+"Incheon",2016,"pm25","Unhealthy for Sensitive Groups",155
+"Incheon",2016,"pm25","Unhealthy",31
+"Incheon",2016,"so2","Good",363
+"Incheon",2017,"co","Good",301
+"Incheon",2017,"no2","Good",209
+"Incheon",2017,"no2","Moderate",92
+"Incheon",2017,"o3","Good",252
+"Incheon",2017,"o3","Moderate",48
+"Incheon",2017,"o3","Unhealthy for Sensitive Groups",1
+"Incheon",2017,"pm10","Good",118
+"Incheon",2017,"pm10","Moderate",178
+"Incheon",2017,"pm10","Unhealthy for Sensitive Groups",3
+"Incheon",2017,"pm10","Unhealthy",1
+"Incheon",2017,"pm25","Good",8
+"Incheon",2017,"pm25","Moderate",162
+"Incheon",2017,"pm25","Unhealthy for Sensitive Groups",106
+"Incheon",2017,"pm25","Unhealthy",25
+"Incheon",2017,"so2","Good",301
+"Incheon",2018,"co","Good",360
+"Incheon",2018,"co","Moderate",2
+"Incheon",2018,"no2","Good",250
+"Incheon",2018,"no2","Moderate",110
+"Incheon",2018,"no2","Unhealthy for Sensitive Groups",2
+"Incheon",2018,"o3","Good",284
+"Incheon",2018,"o3","Moderate",73
+"Incheon",2018,"o3","Unhealthy for Sensitive Groups",5
+"Incheon",2018,"pm10","Good",207
+"Incheon",2018,"pm10","Moderate",151
+"Incheon",2018,"pm10","Unhealthy for Sensitive Groups",4
+"Incheon",2018,"pm25","Good",14
+"Incheon",2018,"pm25","Moderate",222
+"Incheon",2018,"pm25","Unhealthy for Sensitive Groups",107
+"Incheon",2018,"pm25","Unhealthy",20
+"Incheon",2018,"so2","Good",362
+"Incheon",2019,"co","Good",361
+"Incheon",2019,"no2","Good",272
+"Incheon",2019,"no2","Moderate",88
+"Incheon",2019,"o3","Good",280
+"Incheon",2019,"o3","Moderate",77
+"Incheon",2019,"o3","Unhealthy for Sensitive Groups",3
+"Incheon",2019,"pm10","Good",206
+"Incheon",2019,"pm10","Moderate",146
+"Incheon",2019,"pm10","Unhealthy for Sensitive Groups",8
+"Incheon",2019,"pm25","Good",12
+"Incheon",2019,"pm25","Moderate",242
+"Incheon",2019,"pm25","Unhealthy for Sensitive Groups",90
+"Incheon",2019,"pm25","Unhealthy",16
+"Incheon",2019,"pm25","Very Unhealthy",1
+"Incheon",2019,"so2","Good",361
+"Incheon",2020,"co","Good",364
+"Incheon",2020,"no2","Good",313
+"Incheon",2020,"no2","Moderate",51
+"Incheon",2020,"o3","Good",314
+"Incheon",2020,"o3","Moderate",46
+"Incheon",2020,"o3","Unhealthy for Sensitive Groups",4
+"Incheon",2020,"pm10","Good",272
+"Incheon",2020,"pm10","Moderate",92
+"Incheon",2020,"pm25","Good",55
+"Incheon",2020,"pm25","Moderate",245
+"Incheon",2020,"pm25","Unhealthy for Sensitive Groups",62
+"Incheon",2020,"pm25","Unhealthy",1
+"Incheon",2020,"so2","Good",364
+"Incheon",2021,"co","Good",365
+"Incheon",2021,"no2","Good",320
+"Incheon",2021,"no2","Moderate",45
+"Incheon",2021,"o3","Good",275
+"Incheon",2021,"o3","Moderate",77
+"Incheon",2021,"o3","Unhealthy for Sensitive Groups",13
+"Incheon",2021,"pm10","Good",259
+"Incheon",2021,"pm10","Moderate",101
+"Incheon",2021,"pm10","Unhealthy for Sensitive Groups",1
+"Incheon",2021,"pm10","Unhealthy",1
+"Incheon",2021,"pm10","Hazardous",3
+"Incheon",2021,"pm25","Good",51
+"Incheon",2021,"pm25","Moderate",211
+"Incheon",2021,"pm25","Unhealthy for Sensitive Groups",89
+"Incheon",2021,"pm25","Unhealthy",14
+"Incheon",2021,"so2","Good",365
+"Incheon",2022,"co","Good",365
+"Incheon",2022,"no2","Good",336
+"Incheon",2022,"no2","Moderate",29
+"Incheon",2022,"o3","Good",285
+"Incheon",2022,"o3","Moderate",76
+"Incheon",2022,"o3","Unhealthy for Sensitive Groups",4
+"Incheon",2022,"pm10","Good",292
+"Incheon",2022,"pm10","Moderate",71
+"Incheon",2022,"pm10","Unhealthy for Sensitive Groups",2
+"Incheon",2022,"pm25","Good",47
+"Incheon",2022,"pm25","Moderate",242
+"Incheon",2022,"pm25","Unhealthy for Sensitive Groups",69
+"Incheon",2022,"pm25","Unhealthy",7
+"Incheon",2022,"so2","Good",365
+"Incheon",2023,"co","Good",365
+"Incheon",2023,"no2","Good",336
+"Incheon",2023,"no2","Moderate",29
+"Incheon",2023,"o3","Good",259
+"Incheon",2023,"o3","Moderate",101
+"Incheon",2023,"o3","Unhealthy for Sensitive Groups",5
+"Incheon",2023,"pm10","Good",253
+"Incheon",2023,"pm10","Moderate",108
+"Incheon",2023,"pm10","Unhealthy for Sensitive Groups",4
+"Incheon",2023,"pm25","Good",16
+"Incheon",2023,"pm25","Moderate",244
+"Incheon",2023,"pm25","Unhealthy for Sensitive Groups",88
+"Incheon",2023,"pm25","Unhealthy",17
+"Incheon",2023,"so2","Good",365
+"Incheon",2024,"co","Good",364
+"Incheon",2024,"no2","Good",357
+"Incheon",2024,"no2","Moderate",7
+"Incheon",2024,"o3","Good",257
+"Incheon",2024,"o3","Moderate",99
+"Incheon",2024,"o3","Unhealthy for Sensitive Groups",8
+"Incheon",2024,"pm10","Good",264
+"Incheon",2024,"pm10","Moderate",99
+"Incheon",2024,"pm10","Unhealthy",1
+"Incheon",2024,"pm25","Good",16
+"Incheon",2024,"pm25","Moderate",263
+"Incheon",2024,"pm25","Unhealthy for Sensitive Groups",81
+"Incheon",2024,"pm25","Unhealthy",5
+"Incheon",2024,"so2","Good",364
+"Incheon",2025,"co","Good",362
+"Incheon",2025,"no2","Good",353
+"Incheon",2025,"no2","Moderate",9
+"Incheon",2025,"o3","Good",269
+"Incheon",2025,"o3","Moderate",85
+"Incheon",2025,"o3","Unhealthy for Sensitive Groups",8
+"Incheon",2025,"pm10","Good",277
+"Incheon",2025,"pm10","Moderate",85
+"Incheon",2025,"pm25","Good",59
+"Incheon",2025,"pm25","Moderate",215
+"Incheon",2025,"pm25","Unhealthy for Sensitive Groups",79
+"Incheon",2025,"pm25","Unhealthy",9
+"Incheon",2025,"so2","Good",362
+"Seoul",2014,"co","Good",362
+"Seoul",2014,"no2","Good",283
+"Seoul",2014,"no2","Moderate",79
+"Seoul",2014,"o3","Good",342
+"Seoul",2014,"o3","Moderate",20
+"Seoul",2014,"pm10","Good",215
+"Seoul",2014,"pm10","Moderate",139
+"Seoul",2014,"pm10","Unhealthy for Sensitive Groups",7
+"Seoul",2014,"pm25","Good",31
+"Seoul",2014,"pm25","Moderate",88
+"Seoul",2014,"pm25","Unhealthy for Sensitive Groups",29
+"Seoul",2014,"pm25","Unhealthy",1
+"Seoul",2014,"so2","Good",362
+"Seoul",2015,"co","Good",364
+"Seoul",2015,"no2","Good",298
+"Seoul",2015,"no2","Moderate",66
+"Seoul",2015,"o3","Good",350
+"Seoul",2015,"o3","Moderate",14
+"Seoul",2015,"pm10","Good",242
+"Seoul",2015,"pm10","Moderate",116
+"Seoul",2015,"pm10","Unhealthy for Sensitive Groups",4
+"Seoul",2015,"pm10","Very Unhealthy",1
+"Seoul",2015,"pm10","Hazardous",1
+"Seoul",2015,"pm25","Good",44
+"Seoul",2015,"pm25","Moderate",228
+"Seoul",2015,"pm25","Unhealthy for Sensitive Groups",81
+"Seoul",2015,"pm25","Unhealthy",11
+"Seoul",2015,"so2","Good",364
+"Seoul",2016,"co","Good",363
+"Seoul",2016,"no2","Good",312
+"Seoul",2016,"no2","Moderate",51
+"Seoul",2016,"o3","Good",345
+"Seoul",2016,"o3","Moderate",18
+"Seoul",2016,"pm10","Good",198
+"Seoul",2016,"pm10","Moderate",162
+"Seoul",2016,"pm10","Unhealthy for Sensitive Groups",3
+"Seoul",2016,"pm25","Good",28
+"Seoul",2016,"pm25","Moderate",210
+"Seoul",2016,"pm25","Unhealthy for Sensitive Groups",113
+"Seoul",2016,"pm25","Unhealthy",11
+"Seoul",2016,"so2","Good",363
+"Seoul",2017,"co","Good",304
+"Seoul",2017,"no2","Good",261
+"Seoul",2017,"no2","Moderate",42
+"Seoul",2017,"o3","Good",283
+"Seoul",2017,"o3","Moderate",21
+"Seoul",2017,"pm10","Good",173
+"Seoul",2017,"pm10","Moderate",127
+"Seoul",2017,"pm10","Unhealthy for Sensitive Groups",4
+"Seoul",2017,"pm25","Good",31
+"Seoul",2017,"pm25","Moderate",179
+"Seoul",2017,"pm25","Unhealthy for Sensitive Groups",77
+"Seoul",2017,"pm25","Unhealthy",17
+"Seoul",2017,"so2","Good",304
+"Seoul",2018,"co","Good",364
+"Seoul",2018,"no2","Good",330
+"Seoul",2018,"no2","Moderate",32
+"Seoul",2018,"o3","Good",339
+"Seoul",2018,"o3","Moderate",25
+"Seoul",2018,"pm10","Good",239
+"Seoul",2018,"pm10","Moderate",124
+"Seoul",2018,"pm10","Unhealthy for Sensitive Groups",1
+"Seoul",2018,"pm25","Good",88
+"Seoul",2018,"pm25","Moderate",167
+"Seoul",2018,"pm25","Unhealthy for Sensitive Groups",92
+"Seoul",2018,"pm25","Unhealthy",18
+"Seoul",2018,"so2","Good",364
+"Seoul",2019,"co","Good",363
+"Seoul",2019,"no2","Good",323
+"Seoul",2019,"no2","Moderate",37
+"Seoul",2019,"o3","Good",335
+"Seoul",2019,"o3","Moderate",25
+"Seoul",2019,"o3","Unhealthy for Sensitive Groups",2
+"Seoul",2019,"o3","Unhealthy",1
+"Seoul",2019,"pm10","Good",260
+"Seoul",2019,"pm10","Moderate",98
+"Seoul",2019,"pm10","Unhealthy for Sensitive Groups",5
+"Seoul",2019,"pm25","Good",74
+"Seoul",2019,"pm25","Moderate",195
+"Seoul",2019,"pm25","Unhealthy for Sensitive Groups",69
+"Seoul",2019,"pm25","Unhealthy",22
+"Seoul",2019,"pm25","Very Unhealthy",3
+"Seoul",2019,"so2","Good",363
+"Seoul",2020,"co","Good",364
+"Seoul",2020,"no2","Good",339
+"Seoul",2020,"no2","Moderate",25
+"Seoul",2020,"o3","Good",339
+"Seoul",2020,"o3","Moderate",24
+"Seoul",2020,"o3","Unhealthy for Sensitive Groups",1
+"Seoul",2020,"pm10","Good",279
+"Seoul",2020,"pm10","Moderate",85
+"Seoul",2020,"pm25","Good",93
+"Seoul",2020,"pm25","Moderate",200
+"Seoul",2020,"pm25","Unhealthy for Sensitive Groups",64
+"Seoul",2020,"pm25","Unhealthy",6
+"Seoul",2020,"so2","Good",364
+"Seoul",2021,"co","Good",365
+"Seoul",2021,"no2","Good",343
+"Seoul",2021,"no2","Moderate",22
+"Seoul",2021,"o3","Good",325
+"Seoul",2021,"o3","Moderate",39
+"Seoul",2021,"o3","Unhealthy for Sensitive Groups",1
+"Seoul",2021,"pm10","Good",292
+"Seoul",2021,"pm10","Moderate",68
+"Seoul",2021,"pm10","Unhealthy for Sensitive Groups",2
+"Seoul",2021,"pm10","Very Unhealthy",1
+"Seoul",2021,"pm10","Hazardous",2
+"Seoul",2021,"pm25","Good",107
+"Seoul",2021,"pm25","Moderate",194
+"Seoul",2021,"pm25","Unhealthy for Sensitive Groups",52
+"Seoul",2021,"pm25","Unhealthy",12
+"Seoul",2021,"so2","Good",365
+"Seoul",2022,"co","Good",365
+"Seoul",2022,"no2","Good",354
+"Seoul",2022,"no2","Moderate",11
+"Seoul",2022,"o3","Good",317
+"Seoul",2022,"o3","Moderate",48
+"Seoul",2022,"pm10","Good",307
+"Seoul",2022,"pm10","Moderate",56
+"Seoul",2022,"pm10","Unhealthy for Sensitive Groups",2
+"Seoul",2022,"pm25","Good",113
+"Seoul",2022,"pm25","Moderate",191
+"Seoul",2022,"pm25","Unhealthy for Sensitive Groups",56
+"Seoul",2022,"pm25","Unhealthy",5
+"Seoul",2022,"so2","Good",365
+"Seoul",2023,"co","Good",365
+"Seoul",2023,"no2","Good",355
+"Seoul",2023,"no2","Moderate",10
+"Seoul",2023,"o3","Good",292
+"Seoul",2023,"o3","Moderate",70
+"Seoul",2023,"o3","Unhealthy for Sensitive Groups",3
+"Seoul",2023,"pm10","Good",286
+"Seoul",2023,"pm10","Moderate",76
+"Seoul",2023,"pm10","Unhealthy for Sensitive Groups",2
+"Seoul",2023,"pm10","Unhealthy",1
+"Seoul",2023,"pm25","Good",97
+"Seoul",2023,"pm25","Moderate",195
+"Seoul",2023,"pm25","Unhealthy for Sensitive Groups",63
+"Seoul",2023,"pm25","Unhealthy",10
+"Seoul",2023,"so2","Good",365
+"Seoul",2024,"co","Good",364
+"Seoul",2024,"no2","Good",362
+"Seoul",2024,"no2","Moderate",2
+"Seoul",2024,"o3","Good",289
+"Seoul",2024,"o3","Moderate",71
+"Seoul",2024,"o3","Unhealthy for Sensitive Groups",4
+"Seoul",2024,"pm10","Good",312
+"Seoul",2024,"pm10","Moderate",50
+"Seoul",2024,"pm10","Unhealthy for Sensitive Groups",1
+"Seoul",2024,"pm10","Unhealthy",1
+"Seoul",2024,"pm25","Good",116
+"Seoul",2024,"pm25","Moderate",203
+"Seoul",2024,"pm25","Unhealthy for Sensitive Groups",43
+"Seoul",2024,"pm25","Unhealthy",3
+"Seoul",2024,"so2","Good",364
+"Seoul",2025,"co","Good",362
+"Seoul",2025,"no2","Good",359
+"Seoul",2025,"no2","Moderate",3
+"Seoul",2025,"o3","Good",289
+"Seoul",2025,"o3","Moderate",65
+"Seoul",2025,"o3","Unhealthy for Sensitive Groups",8
+"Seoul",2025,"pm10","Good",308
+"Seoul",2025,"pm10","Moderate",53
+"Seoul",2025,"pm10","Unhealthy for Sensitive Groups",1
+"Seoul",2025,"pm25","Good",155
+"Seoul",2025,"pm25","Moderate",156
+"Seoul",2025,"pm25","Unhealthy for Sensitive Groups",46
+"Seoul",2025,"pm25","Unhealthy",5
+"Seoul",2025,"so2","Good",362
