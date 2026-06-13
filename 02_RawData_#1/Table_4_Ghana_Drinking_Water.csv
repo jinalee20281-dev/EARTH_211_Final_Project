@@ -1,0 +1,12 @@
+﻿Site,River,Date_Sampled,Matrix,Source_Type,Collection_Method,UTHg,QA_Flag_UTHg,UMeHg,QA_Flag_UMeHg
+Akango-Doale,Ankobra,10/9/2024,Drinking water,Pipe,Secondary container,669.73,NONE,0.034,NONE
+Bamianko-Dominase,Ankobra,10/9/2024,Treated river surface water,River water treated with alum in metal drum in community,Direct,4.09,NONE,0.059,NONE
+Bamianko-Dominase,Ankobra,10/9/2024,Drinking water,Pipe,Secondary container,35.82,NONE,BDL,NONE
+Kukuavile,Ankobra,10/9/2024,Drinking water,Pipe,ND,3.98,NONE,ND,NONE
+Sanwoma,Ankobra,10/8/2024,Drinking water replicate,Borehole,Secondary container,1.08,NONE,ND,NONE
+Sanwoma,Ankobra,10/8/2024,Drinking water,Borehole,Secondary container,1.37,NONE,BDL,NONE
+Atwereboanda,Pra,10/10/2024,Drinking water,Borehole,ND,1.54,NONE,0.052,NONE
+Beposo,Pra,10/10/2024,Drinking water,Pipe,ND,50.9,NONE,ND,NONE
+Daboase,Pra,10/10/2024,Drinking water,Pipe,Direct,2.55,NONE,ND,NONE
+Shama,Pra,10/10/2024,Drinking water,Pipe,ND,1.02,NONE,0.091,NONE
+Shama,Pra,10/10/2024,Drinking water,Well,Secondary container,32.15,NONE,BDL,NONE
